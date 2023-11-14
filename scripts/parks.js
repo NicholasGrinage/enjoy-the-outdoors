@@ -1,24 +1,26 @@
-"use strict"
+"use strict";
 
-const statesList = document.querySelector("#statesList");
+const parkDropdown = document.querySelector("#parkDropdown");
 const parkTableBody = document.querySelector("#parkTableBody");
+const byLocationRadioFilter = document.querySelector("#byLocationRadioFilter");
+const byTypeRadioFilter = document.querySelector("#byTypeRadioFilter");
+const byAllRadioFilter = document.querySelector("#byAllRadioFilter");
 //  write functions
 function loadStatesList() {
   for (const location of locationsArray) {
     let option = document.createElement("option");
     option.textContent = location.name;
-    option.textContent = location.name;
-    statesList.appendChild(option);
+    option.value = location.name;
+    parkDropdown.appendChild(option);
   }
 }
 
-function loadDefaultOption() {
-    let option = document.createElement("option");
-    option.textContent = "Select...";
-    option.value = "";
-    activityList.appendChild(option);
-  }
-
+function loadTypeList() {
+  let option = document.createElement("option");
+  option.textContent = "Select...";
+  option.value = "";
+  parkDropdown.appendChild(option);
+}
 
 function loadParksTable() {
   for (const park of nationalParksArray) {
@@ -49,27 +51,36 @@ function buildParkRow(park) {
   let cell10 = row.insertCell(9);
   cell10.innerText = park.Longitude;
 }
+function createLocationData() {
+  parkTableBody.innerHTML = "";
 
-function loadParkRowByStates(category) {
-    parkTableBody.options.length = 0;
-    loadDefaultOption()
-    for (const park of nationalParksArray) {
-        if (park.category == category) {
-            let option = document.createElement
-            option.textContent = park.LocationName
-            option.value = park.LocationID
-            parkTableBody.appendChild(option);
-        }
+  const selectedState = parkDropdown.value;
+  const selectedType = parkTypesArray.find((type) => selectedState.includes(type));
+
+  for (const park of nationalParksArray) {
+    const islandState = selectedState == "Rhode Island" || selectedState == "Virgin Islands";
+
+    if (park.State == selectedState || (park.LocationName.includes(selectedType) && !islandState)) {
+      buildParkRow(park);
     }
-}
-
-function categoryListCHanged() {
-    const locationName1 = parkTableBody.value
-    loadParkRowByStates
+  }
 }
 
 // wire up functions
 loadStatesList();
 window.onload = function () {
   loadParksTable();
+};
+parkDropdown.onchange = createLocationData;
+byTypeRadioFilter.onclick = function () {
+  loadTypeList();
+};
+
+byLocationRadioFilter.onclick = function () {
+  loadLocationInDropdown();
+};
+
+byAllRadioFilter.onclick = function () {
+  locationSelector.style.display = "none"; 
+  loadAllInDropdown();
 };

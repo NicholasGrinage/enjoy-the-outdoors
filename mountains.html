@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html data-theme="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mountains</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><strong>Enjoy The Outdoors</strong></li>
-            </ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="mountains.html">Moutains Information</a></li>
-            <li><a href="parks.html">National Parks</a></li>
-        </nav>
+      <nav>
+        <ul>
+          <li><strong>Enjoy The Outdoors</strong></li>
+        </ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mountains.html">Moutains Information</a></li>
+        <li><a href="parks.html">National Parks</a></li>
+      </nav>
     </header>
-    <main></main>
+
+    <main>
+      <form>
+        <label for="mountainsList">Mountains</label>
+        <select id="mountainsList">
+          <option value="">Select...</option>
+        </select>
+        <button id="displayInfoButton">Display Info</button>
+        <p id="displayParagraph"></p>
+        <img id="mountainImage" src="" alt="" />
+      </form>
+    </main>
     <footer></footer>
     <script src="scripts/mountainData.js"></script>
     <script src="scripts/mountains.js"></script>
-</body>
+  </body>
 </html>
