@@ -3,7 +3,7 @@ const mountainsArray = [
         name: "Mt. Washington",
         elevation: 6288,
         effort: "Strenuous",
-        img: "Washington-StoryImage_2.jpg",
+        img: "images/Washington-StoryImage_2.jpg",
         desc: "Mt. Washington (6,288 feet) is the highest peak east of the Mississippi River and north of the Carolinas. The upper part of the mountain has a climate similar to that of northern Labrador and supports a variety of alpine flora and fauna.",
         coords: {
             lat: 44.270403,
@@ -14,7 +14,7 @@ const mountainsArray = [
         name: "Mt. Adams",
         elevation: 5799,
         effort: "Strenuous",
-        img: "Adams-StoryImage_2.jpg",
+        img: "images/Adams-StoryImage_2.jpg",
         desc: "Mt. Adams (5,799') is the second highest peak in New England, offering spectacular views across the Great Gulf and King Ravine.",
         coords: {
             lat: 44.320686,
@@ -25,7 +25,7 @@ const mountainsArray = [
         name: "Mt. Jefferson",
         elevation: 5716,
         effort: "Strenuous",
-        img: "Jefferson-StoryImage_2.jpg",
+        img: "images/Jefferson-StoryImage_2.jpg",
         desc: "Mt. Jefferson (5,716 feet) has three summits a short distance apart, in line northwest and southeast, with the highest in the middle. Perhaps the most striking view is down the Great Gulf with the Carter Range beyond.",
         coords: {
             lat: 44.304196,
@@ -36,7 +36,7 @@ const mountainsArray = [
         name: "Mt. Monroe",
         elevation: 5372,
         effort: "Strenuous",
-        img: "Monroe-StoryImage_2.jpg",
+        img: "images/Monroe-StoryImage_2.jpg",
         desc: "Mt. Monroe (5,372 feet) is the highest of the Southern Presidentials, and is a sharply pointed peak rising abruptly from the area around the Lakes of the Clouds. The summit is completely above treeline and affords fine views of the deep chasm of Oakes Gulf.",
         coords: {
             lat: 44.255036,
@@ -47,7 +47,7 @@ const mountainsArray = [
         name: "Mt. Madison",
         elevation: 5366,
         effort: "Strenuous",
-        img: "Madison-StoryImage_2.jpg",
+        img: "images/Madison-StoryImage_2.jpg",
         desc: "Mt. Madison (5,366 feet) is the farthest northeast of the high peaks of the Presidential Range, remarkable for the great drop of more than 4,000 feet to the river valleys east and northeast from the summit.",
         coords: {
             lat: 44.328422,
@@ -58,7 +58,7 @@ const mountainsArray = [
         name: "Mt. Lafayette",
         elevation: 5260,
         effort: "Strenuous",
-        img: "Lafayette-StoryImage_2.jpg",
+        img: "images/Lafayette-StoryImage_2.jpg",
         desc: "Mt. Lafayette (5,260 feet) represents the highest peak in the Franconia Ridge and, from the summit, offers a stunning view of the Pemigewasset Wilderness Area.",
         coords: {
             lat: 44.16078,
@@ -69,7 +69,7 @@ const mountainsArray = [
         name: "Mt. Lincoln",
         elevation: 5089,
         effort: "Strenuous",
-        img: "Lincoln-StoryImage_2.jpg",
+        img: "images/Lincoln-StoryImage_2.jpg",
         desc: "Mt. Lincoln (5,089 feet), a part of the popular and scenic Franconia Ridge, bears a sharp, rugged peak with excellent views of the surrounding area and an array of alpine plants.",
         coords: {
             lat: 44.148587,
@@ -80,7 +80,7 @@ const mountainsArray = [
         name: "South Twin",
         elevation: 4902,
         effort: "Strenuous",
-        img: "STwin-StoryImage_2.jpg",
+        img: "images/STwin-StoryImage_2.jpg",
         desc: "South Twin Mountain (4,902 feet) offers sweeping views to the south of the Franconia Ridge and Franconia Brook valleys.",
         coords: {
             lat: 44.18762,
@@ -91,7 +91,7 @@ const mountainsArray = [
         name: "Carter Dome",
         elevation: 4832,
         effort: "Strenuous",
-        img: "CDome-StoryImage.jpg",
+        img: "images/CDome-StoryImage.jpg",
         desc: "Carter Dome (4,832'), in the Carter-Moriah Range, offers dramatic, close-up views of Mount Washington and the Presidential Range from its northeastern shoulder, Mount Hight.",
         coords: {
             lat: 44.267268,
@@ -102,7 +102,7 @@ const mountainsArray = [
         name: "Mt. Moosilauke",
         elevation: 4802,
         effort: "Moderate",
-        img: "Moosilauke-StoryImage_2.jpg",
+        img: "images/Moosilauke-StoryImage_2.jpg",
         desc: "Mount Moosilauke, at 4,802 feet, is the western-most 4,000-footer in NH. The alpine summit, on a clear day, affords hikers stunning views, to the east, of the Franconia Ridge and Presidentials, and to the west, the Green Mountains of Vermont and, in the distance, the Adirondacks in New York State.",
         coords: {
             lat: 44.024422,

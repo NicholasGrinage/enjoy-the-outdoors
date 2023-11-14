@@ -20,13 +20,16 @@
 
     <main>
       <form>
-        <label for="mountainsList">Mountains</label>
-        <select id="mountainsList">
-          <option value="">Select...</option>
+        <select name="mountain-data" id="mountainData">
+          <label for="mountainData"></label>
+          <option value="select">Select...</option>
         </select>
-        <button id="displayInfoButton">Display Info</button>
-        <p id="displayParagraph"></p>
-        <img id="mountainImage" src="" alt="" />
+        <button type="button" onclick="displayMountainOnClick()">
+          Confirm Selection
+        </button>
+        <p id="displayMountainOutput"></p>
+        <img src="" alt="" id="mountainImage" style="width: 400px" />
+        <!-- <div id="imageStorage"></div> -->
       </form>
     </main>
     <footer></footer>
