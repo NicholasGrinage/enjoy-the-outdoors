@@ -26,19 +26,15 @@
         <input class="radio-btn" type="radio" name="filter" id="byAllRadioFilter" />
         <label for="byAllRadioFilter">All Parks</label>
       </div>
-      <article>
+      <article id="parkArticle">
         <form>
           <label for="parkDropdown">States/Terrority</label>
           <select id="parkDropdown">
             <option value="">Select...</option>
           </select>
-          <label for="parkTypeDropDown">Park Type</label>
-          <select id="parkTypeDropDown">
-            <option value="">Select...</option>
-          </select>
         </form>
       </article>
-      <table id="parkTypeTable">
+      <table id="parkTypeTable" style="display: none;">
         <thead>
           <tr>
             <th>Location ID</th>
@@ -54,23 +50,6 @@
           </tr>
         </thead>
         <tbody id="parkTableBody"></tbody>
-      </table>
-      <table id="parkTypeTable1">
-        <thead>
-          <tr>
-            <th>Location ID</th>
-            <th>Location Name</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Zip Code</th>
-            <th>Phone</th>
-            <th>Fax</th>
-            <th>Latitude</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody id="parkTableBody1"></tbody>
       </table>
     </main>
     <footer></footer>
